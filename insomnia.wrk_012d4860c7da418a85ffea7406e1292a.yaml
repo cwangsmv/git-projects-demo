@@ -1,0 +1,154 @@
+type: spec.insomnia.rest/5.0
+name: Sample Spec 1.2
+meta:
+  id: wrk_012d4860c7da418a85ffea7406e1292a
+  created: 1589851906270
+  modified: 1593669699121
+  description: ""
+collection:
+  - name: Folder
+    meta:
+      id: fld_wrk_012d4860c7da418a85ffea7406e1292a30baa249
+      created: 1593669324883
+      modified: 1593669699114
+      sortKey: -1593669324883
+      description: ""
+    children:
+      - url: "{{ base_url }}/global"
+        name: /global
+        meta:
+          id: req_wrk_012d4860c7da418a85ffea7406e1292a21946b60
+          created: 1593669324881
+          modified: 1593669699112
+          isPrivate: false
+          description: ""
+          sortKey: -1593669324881
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - url: "{{ base_url }}/override"
+    name: /override
+    meta:
+      id: req_wrk_012d4860c7da418a85ffea7406e1292ab410454b
+      created: 1593669324879
+      modified: 1593669699110
+      isPrivate: false
+      description: ""
+      sortKey: -1593669324879
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+environments:
+  name: Base environment
+  meta:
+    id: env_ca046a738f001eb3090261a537b1b78f86c2094c
+    created: 1589851906358
+    modified: 1593669699118
+    isPrivate: false
+  data:
+    base_url: "{{ scheme }}://{{ host }}{{ base_path }}"
+  subEnvironments:
+    - name: OpenAPI env
+      meta:
+        id: env_env_ca046a738f001eb3090261a537b1b78f86c2094c_sub
+        created: 1592252904087
+        modified: 1593669699117
+        isPrivate: false
+        sortKey: 1592252904087
+      data:
+        base_path: ""
+        host: 200.insomnia.rest
+        scheme: https
+spec:
+  contents:
+    openapi: 3.0.2
+    info:
+      title: Sample Spec
+      version: "1.2"
+      description: A sample API specification
+      contact:
+        email: support@insomnia.rest
+    servers:
+      - url: https://200.insomnia.rest
+    tags:
+      - name: Folder
+    paths:
+      /global:
+        x-kong-name: global
+        get:
+          description: Global
+          operationId: get_global
+          tags:
+            - Folder
+          responses:
+            "200":
+              description: OK
+      /override:
+        get:
+          description: Override
+          operationId: get_override
+          tags:
+            - Folder
+          responses:
+            "200":
+              description: OK
+  meta:
+    id: spc_46c5a4a40e83445a9bd9d9758b86c16c
+    created: 1589851906273
+    modified: 1593669699123
+testSuites:
+  - name: A test suite
+    meta:
+      id: uts_7f0f85548b0147f4ba6b5e442d137613
+      created: 1593668430232
+      modified: 1593669651173
+      sortKey: -1749190065330
+    tests:
+      - name: Test should succeed
+        meta:
+          id: ut_97a197104e83454ebf5f4e0dc0ba4bc6
+          created: 1593668468718
+          modified: 1593669244289
+          sortKey: -1749190065329
+        code: expect(true).to.equal(true);
+      - name: Test should fail
+        meta:
+          id: ut_8fc42ec7f82a45d09e691ddfe212fd85
+          created: 1593668581197
+          modified: 1593669248598
+          sortKey: -1749190065329
+        code: expect(true).not.to.equal(true);
+  - name: Another suite
+    meta:
+      id: uts_fe901c6565044f00aa620d3fe47f443f
+      created: 1593668662131
+      modified: 1593668662131
+      sortKey: -1749190065330
+    tests:
+      - name: One plus one is two
+        meta:
+          id: ut_8c0c020fb9e341c2a3162e723445faf1
+          created: 1593668670236
+          modified: 1593668678950
+          sortKey: -1749190065329
+        code: expect(1+1).to.equal(2);
+      - name: Expect active request to be set
+        meta:
+          id: ut_6b214a8cd07046f2a8f43237ca913c73
+          created: 1593668846292
+          modified: 1593669592203
+          sortKey: -1749190065328
+        requestId: req_wrk_012d4860c7da418a85ffea7406e1292a21946b60
+        code: expect(insomnia.activeRequestId).to.equal('req_wrk_012d4860c7da418a85ffea7406e1292a21946b60')
