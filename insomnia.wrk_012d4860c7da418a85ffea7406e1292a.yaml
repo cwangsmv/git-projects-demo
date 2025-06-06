@@ -24,6 +24,9 @@ collection:
           description: ""
           sortKey: -1593669324881
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -32,6 +35,9 @@ collection:
             send: true
             store: true
           rebuildPath: true
+    scripts:
+      afterResponse: ""
+      preRequest: ""
   - url: "{{ base_url }}/override"
     name: /override
     meta:
@@ -42,6 +48,9 @@ collection:
       description: ""
       sortKey: -1593669324879
     method: GET
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
