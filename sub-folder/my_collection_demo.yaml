@@ -1,0 +1,42 @@
+type: collection.insomnia.rest/5.0
+name: My Collection
+meta:
+  id: wrk_351ce6a1da3c488fb3daa08f5716ff8e
+  created: 1750411345931
+  modified: 1750411345931
+  description: ""
+collection:
+  - url: ""
+    name: New Request
+    meta:
+      id: req_f71492202088405e9e6e21027668e4d1
+      created: 1750411351092
+      modified: 1750411351092
+      isPrivate: false
+      description: ""
+      sortKey: -1750411351092
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b0a2e441677a21b06bf9fc91e2c8a996f0741cf3
+    created: 1750411345937
+    modified: 1750411345937
+environments:
+  name: Base Environment
+  meta:
+    id: env_b0a2e441677a21b06bf9fc91e2c8a996f0741cf3
+    created: 1750411345936
+    modified: 1750411345936
+    isPrivate: false
