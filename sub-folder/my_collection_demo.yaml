@@ -27,6 +27,39 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: wss://websocket
+    name: New WebSocket Request
+    meta:
+      id: ws-req_0117e4320a354a74a788ad87fd093dd7
+      created: 1755848413958
+      modified: 1755848442024
+      description: ""
+      sortKey: -1755848413958
+    settings:
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0-beta.2
+  - url: http://localhost:3000
+    name: New Socket.IO Request
+    meta:
+      id: socketio-req_35a84bace61546cf98322cd1959ddbc7
+      created: 1755848247462
+      modified: 1755848889674
+      description: ""
+      sortKey: -1755848247462
+    settings:
+      encodeUrl: true
+      cookies:
+        send: true
+        store: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0-beta.2
 cookieJar:
   name: Default Jar
   meta:
