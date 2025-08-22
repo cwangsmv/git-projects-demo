@@ -6,12 +6,12 @@ meta:
   modified: 1749190068912
   description: ""
 collection:
-  - url: www.google.com
+  - url: www.google.com/hello
     name: My first request
     meta:
       id: req_4ec5ac40a5dc4e71a61cd1d4fa92d431
       created: 1749190068935
-      modified: 1755849153973
+      modified: 1755849238787
       isPrivate: false
       description: ""
       sortKey: -1749190068935
@@ -19,9 +19,6 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.2.0
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
