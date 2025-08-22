@@ -19,9 +19,6 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.2.0
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
