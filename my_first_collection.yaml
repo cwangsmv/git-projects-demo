@@ -6,7 +6,7 @@ meta:
   modified: 1749190068912
   description: ""
 collection:
-  - url: www.google.com/hello
+  - url: www.google.com/he
     name: My first request
     meta:
       id: req_4ec5ac40a5dc4e71a61cd1d4fa92d431
