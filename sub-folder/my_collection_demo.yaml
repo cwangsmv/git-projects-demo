@@ -6,12 +6,12 @@ meta:
   modified: 1750411345931
   description: ""
 collection:
-  - url: ""
-    name: New Request
+  - url: https://www.httpbin.org/get
+    name: normal request
     meta:
       id: req_f71492202088405e9e6e21027668e4d1
       created: 1750411351092
-      modified: 1750411351092
+      modified: 1755843421011
       isPrivate: false
       description: ""
       sortKey: -1750411351092
