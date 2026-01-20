@@ -8,7 +8,7 @@ meta:
   description: ""
 mcpRequest:
   name: ""
-  url: ""
+  url: httpbin.org/mcp
   transportType: streamable-http
   headers:
     - name: User-Agent
@@ -16,7 +16,7 @@ mcpRequest:
   meta:
     id: mcp-req_7bb7b2a59e134d4ca90f95c0e13e326c
     created: 1768881186339
-    modified: 1768881186339
+    modified: 1768881224976
 environments:
   name: Base Environment
   meta:
