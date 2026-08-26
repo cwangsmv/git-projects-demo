@@ -1,0 +1,72 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: old collection
+meta:
+  id: wrk_5345dd1b75324b9592dcc36ffb7b7a12
+  created: 1787722887580
+  modified: 1787722887580
+  description: ""
+collection:
+  - name: My Folder
+    meta:
+      id: fld_1f891997100c47a39675b897dea6eac0
+      created: 1787722915165
+      modified: 1787722915165
+      sortKey: -1787722915165
+      description: ""
+    children:
+      - url: ""
+        name: New Request
+        meta:
+          id: req_12257acc25004847905b86de53fdced7
+          created: 1787722917300
+          modified: 1787722918476
+          isPrivate: false
+          description: ""
+          sortKey: -1787722917300
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: New Request
+        meta:
+          id: req_7f074165eb364ac1a846931fbbde14fe
+          created: 1787722921480
+          modified: 1787722922583
+          isPrivate: false
+          description: ""
+          sortKey: -1787722921480
+        method: POST
+        body:
+          mimeType: application/graphql
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c4d2a764cfa2aa34821438900be4b479cb68c051
+    created: 1787722887583
+    modified: 1787722887583
+environments:
+  name: Base Environment
+  meta:
+    id: env_c4d2a764cfa2aa34821438900be4b479cb68c051
+    created: 1787722887582
+    modified: 1787722887582
+    isPrivate: false
